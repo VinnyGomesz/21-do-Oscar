@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>21 do Oscar</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div id="brgold">
+      <div id="display">
+        <img class="img" src="src/img/oscar.PNG" />
+        <div id="menu">
+          <div id="start">
+            <h1>
+              21 do Oscar
+            </h1>
+            <div class="btns">
+              <button>
+                Start to player
+              </button>
+            </div>
+          </div>
+          <div id="btnsopcoes">
+            <div class="btns">
+              <button id="playvscomputer" onclick="computer()">
+                <span class="type">SinglePlayer</span>
+              </button>
+              <button id="playvsplay" onclick="player()">
+                <span class="type">MultiPlayer</span>
+              </button>
+              <button id="score">
+                Score
+              </button>
+            </div>
+          </div>
+          <div id="rules">
+            <!-- regras do modo player vs player  -->
+            Rules
+            <ol id="ol-Regras">
+              <li>
+                1 - Each player can only choose three numbers from the last one.
+              </li>
+              <li>
+                2 - Select a number greater than 21 the player will lose the match.
+              </li>
+              <li>
+                3 - To play just click on the chosen number.</li>
+              <li>
+                4 - Whoever gets to 21 first wins the match.</li>
+            </ol>
+            <button id="btn-next">
+              Next
+            </button>
+          </div>
+          <div id="rules1"> 
+            <!-- regras do moco computer -->
+            Rules
+            <ol id="ol-Regras1" >
+              <li>
+                Each player can only choose three numbers from the last one.
+              </li>
+              <li>
+                Select a number greater than 21 the player will lose the match.
+              </li>
+              <li>To play just click on the chosen number.</li>
+              <li>Whoever gets to 21 first wins the match.</li>
+            </ol>
+            <button id="btn-next1">
+              Next
+            </button>
+          </div>
+          <!-- modo de jogo do computer vs player -->
+          <div id="computergame1">
+            <h1 class="h1" >make you move</h1>
+            <div id="btnscomputergame1" > 
+              <div id="btn1"></div>
+              <div id="btn2"></div>
+              <div id="btn3"></div>
+            </div>
+            <h1 class="h1" >Players</h1>
+          </div>
+          <!-- modo de jogo do player vs player -->
+          <div id="gameMult">
+            <h1 class="h1M" >make you move</h1>
+            <div  id="btnssGameMult"> 
+              <div id="btn1Multplayer"></div>
+              <div id="btn2Multplayer"></div>
+              <div id="btn3Multplayer"></div>
+            </div>
+            <h1 class="h1M" >Player</h1>
+          </div>
+          </div>
+             <img class="img" src="src/img/oscar.PNG" />
+          </div>
+          <!-- tela de vitoria -->
+          <div id="victory">
+            <h1>congratulations</h1>
+            <img class="img" src="src/img/oscar.PNG" />
+            <h2 id="playervictory"></h2>
+          </div>
+          <!-- tela de derrota -->
+          <div id="defeat">
+            <h1>you lose</h1>
+            <img class="img" src="src/img/OscarX.png" />
+            <div id="returnDefeat" >
+              <h1>Return</h1>
+            </div>
+          </div>
+          <!-- tela de score -->
+          <div id="screenScore"> 
+            <img class="img" src="src/img/oscar.PNG" />
+            <div>
+              <div id="ctrScore">
+                <h1>score</h1>
+                <label for="">player 1</label>
+                <table class="resultado1">
+                  <tr>
+                      <td class="score">0</td>
+                  </tr>
+                </table>               
+                  <label for="">player 2</label>
+                <table class="resultado2">
+                  <tr>
+                      <td class="score">0</td>
+                  </tr>
+                </table>
+              </div>
+              <div id="returnScore" >
+                    <h1>Return</h1>
+              </div> 
+            </div>          
+            <img class="img" src="src/img/oscar.PNG" />
+          </div> 
+      </div>
+    </div> 
+  </body>
+  <script src="src/js/playerVS.js"></script>
+  <script src="src/js/computerVS.js"></script>
+</html>
